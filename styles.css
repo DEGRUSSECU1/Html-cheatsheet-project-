@@ -1,3 +1,31 @@
 body{
-    background-color:rgb(245, 191, 44);
+    background-color:#fefae0;
 }
+header{
+    font-size: 4em;
+    color: black;
+}
+
+.example img{
+    width: 450px;
+    max-width: 100%;
+    border: 20%;
+    border-color: red;
+    border-radius: 5%;
+    
+
+}
+.example img:hover{
+    transform: scale(1.1);
+ 
+}
+table, th, td {
+    border: 1px solid black;
+  }
+
+  th{
+      background-color: #fb8500;
+  }
+  td{
+      background-color: #caf0f8;
+  }

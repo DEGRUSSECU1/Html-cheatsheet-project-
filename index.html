@@ -8,63 +8,188 @@
     <title>Cheat Sheet Project</title>
 </head>
 <body>
-    <header>Cheatsheet for my second project at CodeAcademy</header>
+    <header> HTML-Tables Cheatsheet </header>
     <hr>
 <article>
     <h1> Html:Tables</h1>
+    
+<table>
+    <thead>
+        <tr>
+            <th  colspan="2">Table Example using Html and CSS:</th>
+        </tr>
+        <tr>
+            <th >&lt;tr&gt;</th>
+            <td>The table row element is used to add rows to a table before adding table data and table headings.</td>
+        </tr>
+        <tr>
+            <th >&lt;td&gt;</th>
+            <td>The table data element, &lt;td&gt;, can be nested inside a table row element,&lt;td&gt;, to add a cell of data to a table.</td>
+        </tr>
+        <tr>
+            <th >&lt;th&gt;</th>
+            <td>The table heading element, &lt;th&gt;, is used to add titles to rows and columns of a table and must be enclosed in a table row element,&lt;tr&gt;.</td>
+        </tr>
+        <tr>
+            <th >&lt;thead&gt;</th>
+            <td>The table head element,  &lt;thead&gt;, defines the headings of table columns encapsulated in table rows.</td>
+        </tr>
+        <tr>
+            <th >&lt;tbody&gt;</th>
+            <td>The table body element, &lt;tbody&gt;, is a semantic element that will contain all table data other than table heading and table footer content. If used, &lt;tbody&gt; will contain all table row &lt;tr&gt; elements, and indicates that &lt;tr&gt; elements make up the body of the table. &lt;table&gt; cannot have both &lt;tbody&gt; and &lt;tr&gt; as direct children.</td>
+        </tr>
+    </thead>
+   
+   
+</table>
 
     <h2>The table row element: &lt;tr&gt;</h2>
     <p>The table row element is used to add rows to a table before adding table data and table headings.</p>
-    <figure>
+    <figure class="example">
         <img src="./img/tr.png">
-    </figure>
-
+    </figure >
+    <h3>Example:</h3>
+    <table>
+        <tr>
+          <td>...</td>
+        </tr>
+      </table>
+  
     <h2>The table data element: &lt;td&gt;</h2>
     <p>The table data element, &lt;td&gt;, can be nested inside a table row element,&lt;td&gt;, to add a cell of data to a table.
     </p>
-    <figure>
+    <figure figure class="example">
         <img src="./img/td.png">
     </figure>
+    <h3>Example:</h3>
+    
+<table>
+    <tr>
+      <td>cell one data</td>
+      <td>cell two data</td>
+    </tr>
+  </table>
 
     <h2>The Table Head Element: &lt;thead&gt;</h2>
     <p>The table head element,  &lt;thead&gt;, defines the headings of table columns encapsulated in table rows.
     </p>
-    <figure>
+    <figure figure class="example">
         <img src="./img/thead.png">
     </figure>
+    <h3>Example:</h3>
+    <table>
+        <thead>
+          <tr>
+            <th>heading 1</th>
+            <th>heading 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>col 1</td>
+            <td>col 2</td>
+          </tr>
+        </tbody>
+       </table>
     
     
     <h2>The rowspan Attribute: </h2>
     <p>Similar to <em>colspan</em>, the <em>rowspan </em>attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The <em>rowspan</em> value is set to 1 by default and will take any positive integer up to 65534.
     </p>
-    <figure>
+    <figure figure class="example">
         <img src="./img/rowspan.png">
     </figure>
+    <h3>Example:</h3>
+    <table>
+        <tr>
+          <th>row 1:</th>
+          <td>col 1</td>
+          <td>col 2</td>
+        </tr>
+        <tr>
+          <th rowspan="2">row 2 (this row will span 2 rows):</th>
+          <td>col 1</td>
+          <td>col 2</td>
+        </tr>
+        <tr>
+          <td>col 1</td>
+          <td>col 2</td>
+        </tr>
+         <tr>
+          <th>row 3:</th>
+          <td>col 1</td>
+          <td>col 2</td>
+        </tr>
+      </table>
 
     <h2>Table Body Element: &lt;tbody&gt;</h2>
     <p>The table body element, &lt;tbody&gt;, is a semantic element that will contain all table data other than table heading and table footer content. If used, &lt;tbody&gt; will contain all table row &lt;tr&gt; elements, and indicates that &lt;tr&gt; elements make up the body of the table. &lt;table&gt; cannot have both &lt;tbody&gt; and &lt;tr&gt; as direct children.
 
     </p>
-    <figure>
+    <figure figure class="example">
         <img src="./img/tbody.png">
     </figure>
+    <h3>Example:</h3>
+    <table>
+        <tbody>
+          <tr>
+            <td>row 1</td>
+          </tr>
+          <tr>
+            <td>row 2</td>
+          </tr>
+          <tr>
+            <td>row 3</td>
+          </tr>
+        </tbody>
+       </table>
 
     <h2>Table Heading Element: &lt;th&gt;</h2>
     <p>The table heading element, &lt;th&gt;, is used to add titles to rows and columns of a table and must be enclosed in a table row element,&lt;tr&gt;.
 
     </p>
-    <figure>
+    <figure figure class="example">
         <img src="./img/th.png">
     </figure>
-
+    <h3>Example:</h3>
+    <table>
+        <tr>
+          <th>column one</th>
+          <th>column two</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+      </table>
     <h2>Colspan Attribute: </h2>
     <p>The colspan attribute on a table header &lt;th&gt; or table data &lt;td&gt; element indicates how many columns that particular cell should span within the table. The colspan value is set to 1 by default and will take any positive integer between 1 and 1000.
 
     </p>
-    <figure>
+    <figure figure class="example">
         <img src="./img/colspan.png">
     </figure>
+    <h3>Example:</h3>
+    <table>
+        <tr>
+          <th>row 1:</th>
+          <td>col 1</td>
+          <td>col 2</td>
+          <td>col 3</td>
+        </tr>
+        <tr>
+          <th>row 2:</th>
+          <td colspan="2">col 1 (will span 2 columns)</td>
+          <td>col 2</td>
+          <td>col 3</td>
+        </tr>
+      </table>
     
 </article>
+
+
+
+
+
 </body>
 </html>
